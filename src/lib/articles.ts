@@ -1,3 +1,7 @@
+// To add a new article: append an entry to the `articles` array below.
+// It will automatically appear in the Writing section on the home page
+// and get its own page at /writing/<slug>.
+
 export type Article = {
   slug: string;
   title: string;

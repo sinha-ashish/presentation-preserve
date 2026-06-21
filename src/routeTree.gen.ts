@@ -9,154 +9,48 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WritingRouteImport } from './routes/writing'
-import { Route as SkillsRouteImport } from './routes/skills'
-import { Route as ExpertiseRouteImport } from './routes/expertise'
-import { Route as ExperienceRouteImport } from './routes/experience'
-import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WritingSlugRouteImport } from './routes/writing.$slug'
 
-const WritingRoute = WritingRouteImport.update({
-  id: '/writing',
-  path: '/writing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SkillsRoute = SkillsRouteImport.update({
-  id: '/skills',
-  path: '/skills',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ExpertiseRoute = ExpertiseRouteImport.update({
-  id: '/expertise',
-  path: '/expertise',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ExperienceRoute = ExperienceRouteImport.update({
-  id: '/experience',
-  path: '/experience',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WritingSlugRoute = WritingSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => WritingRoute,
+  id: '/writing/$slug',
+  path: '/writing/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/expertise': typeof ExpertiseRoute
-  '/skills': typeof SkillsRoute
-  '/writing': typeof WritingRouteWithChildren
   '/writing/$slug': typeof WritingSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/expertise': typeof ExpertiseRoute
-  '/skills': typeof SkillsRoute
-  '/writing': typeof WritingRouteWithChildren
   '/writing/$slug': typeof WritingSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/expertise': typeof ExpertiseRoute
-  '/skills': typeof SkillsRoute
-  '/writing': typeof WritingRouteWithChildren
   '/writing/$slug': typeof WritingSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/contact'
-    | '/experience'
-    | '/expertise'
-    | '/skills'
-    | '/writing'
-    | '/writing/$slug'
+  fullPaths: '/' | '/writing/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/contact'
-    | '/experience'
-    | '/expertise'
-    | '/skills'
-    | '/writing'
-    | '/writing/$slug'
-  id:
-    | '__root__'
-    | '/'
-    | '/contact'
-    | '/experience'
-    | '/expertise'
-    | '/skills'
-    | '/writing'
-    | '/writing/$slug'
+  to: '/' | '/writing/$slug'
+  id: '__root__' | '/' | '/writing/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ContactRoute: typeof ContactRoute
-  ExperienceRoute: typeof ExperienceRoute
-  ExpertiseRoute: typeof ExpertiseRoute
-  SkillsRoute: typeof SkillsRoute
-  WritingRoute: typeof WritingRouteWithChildren
+  WritingSlugRoute: typeof WritingSlugRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/writing': {
-      id: '/writing'
-      path: '/writing'
-      fullPath: '/writing'
-      preLoaderRoute: typeof WritingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/skills': {
-      id: '/skills'
-      path: '/skills'
-      fullPath: '/skills'
-      preLoaderRoute: typeof SkillsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/expertise': {
-      id: '/expertise'
-      path: '/expertise'
-      fullPath: '/expertise'
-      preLoaderRoute: typeof ExpertiseRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/experience': {
-      id: '/experience'
-      path: '/experience'
-      fullPath: '/experience'
-      preLoaderRoute: typeof ExperienceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -166,32 +60,17 @@ declare module '@tanstack/react-router' {
     }
     '/writing/$slug': {
       id: '/writing/$slug'
-      path: '/$slug'
+      path: '/writing/$slug'
       fullPath: '/writing/$slug'
       preLoaderRoute: typeof WritingSlugRouteImport
-      parentRoute: typeof WritingRoute
+      parentRoute: typeof rootRouteImport
     }
   }
 }
 
-interface WritingRouteChildren {
-  WritingSlugRoute: typeof WritingSlugRoute
-}
-
-const WritingRouteChildren: WritingRouteChildren = {
-  WritingSlugRoute: WritingSlugRoute,
-}
-
-const WritingRouteWithChildren =
-  WritingRoute._addFileChildren(WritingRouteChildren)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ContactRoute: ContactRoute,
-  ExperienceRoute: ExperienceRoute,
-  ExpertiseRoute: ExpertiseRoute,
-  SkillsRoute: SkillsRoute,
-  WritingRoute: WritingRouteWithChildren,
+  WritingSlugRoute: WritingSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
