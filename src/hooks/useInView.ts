@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type RefObject } from "react";
 
 export function useInView<T extends HTMLElement = HTMLDivElement>(
   rootMargin = "0px 0px -10% 0px",
-): [React.RefObject<T>, boolean] {
-  const ref = useRef<T>(null);
+): [RefObject<T | null>, boolean] {
+  const ref = useRef<T | null>(null);
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
