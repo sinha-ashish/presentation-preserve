@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Container } from "../components/site/Container";
-import { getArticle, articles } from "../lib/articles";
+import { getArticle } from "../lib/articles";
 
 export const Route = createFileRoute("/writing/$slug")({
   loader: ({ params }) => {
@@ -37,7 +37,8 @@ export const Route = createFileRoute("/writing/$slug")({
   component: ArticlePage,
 });
 
-export const Loader = articles; // keep tree-shake-stable
+
+
 
 function ArticlePage() {
   const { article } = Route.useLoaderData();
