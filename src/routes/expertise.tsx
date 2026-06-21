@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "../components/site/Container";
 import { SectionLabel } from "../components/site/SectionLabel";
+import { TriTier } from "../components/site/TriTier";
 
 export const Route = createFileRoute("/expertise")({
   head: () => ({
@@ -48,6 +49,11 @@ function ExpertisePage() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-16">
+          <SectionLabel>Tri-Tier AI Execution Framework</SectionLabel>
+          <TriTier />
         </div>
       </Container>
     </section>
