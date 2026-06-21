@@ -36,7 +36,7 @@ function ContactPage() {
             <a href="tel:+33618973960" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
               📞 &nbsp;+33 6 18 97 39 60
             </a>
-            <a href="https://www.linkedin.com/in/ashish-sinha" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
+            <a href="https://www.linkedin.com/in/sinha-ashish" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
               💼 &nbsp;LinkedIn Profile →
             </a>
           </div>
