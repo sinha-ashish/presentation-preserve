@@ -57,7 +57,7 @@ function ArticlePage() {
             {article.title}
           </h1>
           <div className="space-y-6 text-[1.05rem] leading-[1.8] text-ink/85">
-            {article.paragraphs.map((p, i) => (
+            {article.paragraphs.map((p: string, i: number) => (
               <p key={i}>{p}</p>
             ))}
           </div>
