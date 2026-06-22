@@ -86,7 +86,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. Based in Paris." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Ashish Sinha" },
-      { name: "twitter:card", content: "summary" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
