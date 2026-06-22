@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteNav } from "../components/site/SiteNav";
 import { SiteFooter } from "../components/site/SiteFooter";
+import { LanguageProvider } from "../lib/LanguageContext";
 
 function NotFoundComponent() {
   return (
@@ -85,7 +86,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. Based in Paris." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Ashish Sinha" },
-      { name: "twitter:card", content: "summary" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -119,13 +119,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex min-h-screen flex-col">
-        <SiteNav />
-        <main className="flex-1">
-          <Outlet />
-        </main>
-        <SiteFooter />
-      </div>
+      <LanguageProvider>
+        <div className="flex min-h-screen flex-col">
+          <SiteNav />
+          <main className="flex-1">
+            <Outlet />
+          </main>
+          <SiteFooter />
+        </div>
+      </LanguageProvider>
     </QueryClientProvider>
   );
 }
