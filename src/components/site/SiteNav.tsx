@@ -21,7 +21,7 @@ export function SiteNav() {
           {sections.map((s) => (
             <a
               key={s.hash}
-              href={s.hash === "#resume" ? "/Ashish-Sinha-Resume.pdf" : `/${s.hash}`}
+              href={s.hash === "#resume" ? "https://rxresu.me/five.summers/senior-product-manager" : `/${s.hash}`}
               {...(s.hash === "#resume" ? { target: "_blank", rel: "noreferrer" } : {})}
               className="text-[0.82rem] font-medium uppercase tracking-[0.04em] text-mid transition-colors hover:text-ink"
             >
