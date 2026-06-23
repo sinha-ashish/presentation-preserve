@@ -86,6 +86,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. Based in Paris." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Ashish Sinha" },
+      { name: "twitter:title", content: "Ashish Sinha — Enterprise AI Product Leader" },
+      { name: "twitter:description", content: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. Based in Paris." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/6e1d77f8-ddb6-438d-9075-e8e076b954b4" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/6e1d77f8-ddb6-438d-9075-e8e076b954b4" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
