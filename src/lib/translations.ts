@@ -34,7 +34,7 @@ export type Translation = {
 const en: Translation = {
   nav: { index: "Index", dashboard: "Dashboard", manual: "Manual", writing: "Writing", resume: "Resume", cta: "Let's talk" },
   hero: {
-    badge: "Open to Senior AI Product roles · Paris",
+    badge: "Senior AI Product Leader · Paris",
     h1: "What gets enterprise AI out of the demo — and into production?",
     sub: "9 years building the governance, delivery cadence, and cross-functional discipline that makes AI dependable at scale. I run the squads, clear the blockers, and ship the use cases.",
     cta: "Get in touch",
@@ -70,9 +70,10 @@ const en: Translation = {
   },
   instinct: {
     label: "Operating Instinct",
-    h2: "Three moments that explain how I actually work.",
+    h2: "Four moments that define how I make decisions.",
     cards: [
       { tag: "Ambiguity", headline: "No brief. Two weeks. An unfamiliar stack.", body: "Brought a business-critical problem from an internal enterprise client at global scale, inside a Group IT model where business units operate with governance on par with external procurement. No clean brief, a two-week window, an unfamiliar tech stack. Proposed a working prototype targeting the core user journeys before being asked, validated it immediately, then ran a 3-day hackathon with tech leads and engineers — functional user journeys delivered in five days.", closing: "Sceptical stakeholders became advocates because they understood why, not just what." },
+      { tag: "Decided Not to Build", headline: "The use case I killed before it shipped.", body: "Scoped a centralised AI agent for infrastructure performance monitoring and compliance dashboards — covering historical trend analysis, active correction recommendations, and 1-click semi-automated remediation across ServiceNow, ScienceLogic, log analysis, and security and accessibility code scans. The data integration complexity across disparate systems was too high to justify proceeding. Parked it, redirected the team, and kept a dedicated squad of three engineers exploring feasibility in parallel — while the rest of the portfolio continued shipping. This sits alongside 15+ use cases already confirmed in production, not rolled into that count.", closing: "Knowing what not to build — and when to stop — is the same muscle as knowing what to ship first." },
       { tag: "Growth Mechanics", headline: "Distribution through trust, not spend.", body: "Scaled a 0-to-1 EU-funded platform from zero to a 150+ partner network by aligning with research institutions people already trusted, rather than competing for cold attention. Redesigned onboarding separately for creators and learners to remove first-use friction, and built a free certification mechanic that gave both sides a reason to return.", closing: "The platform was discovered through channels people already trusted — not sold to them cold." },
       { tag: "Builder's Instinct", headline: "I build my own tools before I'm asked to.", body: "Outside the core role, vibe-coded an AI-powered personal system that manages interview prep, positioning, and application content as a structured, reusable, swappable database — the same instinct now directed at enterprise AI delivery: spot the process running on scripts and good intentions, and build the infrastructure that makes it repeatable.", closing: "I built a personal AI Studio before I knew the name for it." },
     ],
@@ -140,8 +141,8 @@ const en: Translation = {
     intro: "Articles published roughly every week — on AI delivery, enterprise product, and execution frameworks.",
   },
   fit: {
-    label: "Motivation & Fit",
-    h2: "What I'm actually looking for.",
+    label: "Working Philosophy",
+    h2: "How I work best.",
     blocks: [
       { label: "Environment", body: "High autonomy, fast sign-off culture. I do my best work when squads are empowered to move without multi-layered bureaucracy — slower organizational velocity is fine; that's exactly the zone where I add the most value. What's non-negotiable is the freedom to act on that velocity once I'm in." },
       { label: "Ownership", body: "Genuine product ownership, not delivery-management-in-name-only. I want to shape the roadmap, not just orchestrate someone else's." },
@@ -150,8 +151,8 @@ const en: Translation = {
     ],
   },
   contact: {
-    h2: "Open to the right opportunity.",
-    body: "Senior AI Product roles in Paris. Enterprise delivery, governance, and GenAI at scale. Let's have a conversation.",
+    h2: "Let's build something that matters.",
+    body: "Enterprise AI delivery, governance, and product strategy at scale. Reach out if you're working on something serious.",
   },
   crisis: {
     title: "Crisis Resolution Flowchart",
@@ -164,7 +165,7 @@ const en: Translation = {
 const fr: Translation = {
   nav: { index: "Accueil", dashboard: "Tableau de bord", manual: "Manuel", writing: "Articles", resume: "CV", cta: "Discutons" },
   hero: {
-    badge: "Disponible · Rôles IA Senior · Paris",
+    badge: "Senior Leader Produit IA · Paris",
     h1: "Comment passer de la démo à la production en IA d'entreprise ?",
     sub: "9 ans à piloter des squads pluridisciplinaires sur des portefeuilles €30M+. Je construis la gouvernance, la cadence de livraison et la rigueur opérationnelle qui rendent l'IA d'entreprise fiable — pas seulement impressionnante en démo.",
     cta: "Me contacter",
@@ -200,9 +201,10 @@ const fr: Translation = {
   },
   instinct: {
     label: "Instinct opérationnel",
-    h2: "Trois moments qui expliquent comment je travaille vraiment.",
+    h2: "Quatre moments qui définissent comment je prends mes décisions.",
     cards: [
       { tag: "Ambiguïté", headline: "Pas de brief. Deux semaines. Un stack inconnu.", body: "Un problème critique apporté par un client enterprise interne à l'échelle mondiale, dans un modèle Group IT où les business units opèrent avec une gouvernance comparable à un appel d'offres externe. Pas de brief structuré, une fenêtre de deux semaines, un stack technologique inconnu. J'ai proposé un prototype fonctionnel ciblant les parcours utilisateurs clés avant qu'on me le demande, validé immédiatement, puis organisé un hackathon de 3 jours avec les tech leads et ingénieurs — des parcours utilisateurs fonctionnels livrés en cinq jours.", closing: "Les parties prenantes sceptiques sont devenues des ambassadeurs — parce qu'elles comprenaient le pourquoi, pas seulement le quoi." },
+      { tag: "Décision de ne pas construire", headline: "Le cas d'usage que j'ai arrêté avant qu'il parte en production.", body: "J'ai cadré un agent IA centralisé pour le monitoring des performances d'infrastructure et les tableaux de bord de conformité — couvrant l'analyse de tendances historiques, des recommandations de correction active et des remédiations semi-automatisées en un clic sur ServiceNow, ScienceLogic, l'analyse de logs, et les audits de sécurité et d'accessibilité. La complexité d'intégration des données entre systèmes disparates était trop élevée pour justifier la poursuite. Mis en pause, équipe redirigée, et une squad dédiée de trois ingénieurs maintenue pour explorer la faisabilité en parallèle — pendant que le reste du portefeuille continuait à livrer. Ce cas d'usage côtoie 15+ cas d'usage déjà confirmés en production, sans être comptabilisé dans ce chiffre.", closing: "Savoir quoi ne pas construire — et quand s'arrêter — c'est le même muscle que savoir quoi livrer en premier." },
       { tag: "Mécaniques de croissance", headline: "La distribution par la confiance, pas par le budget.", body: "Passage de zéro à 150+ partenaires institutionnels pour une plateforme EU-funded en s'appuyant sur des institutions de recherche déjà reconnues, plutôt qu'en cherchant à capter une attention froide. Refonte de l'onboarding séparément pour les créateurs et les apprenants afin de supprimer les frictions à la première utilisation, et construction d'un module de certification gratuit donnant aux deux parties une raison de revenir.", closing: "La plateforme a été découverte via des canaux déjà reconnus — pas vendue à froid." },
       { tag: "Instinct constructeur", headline: "Je construis mes propres outils avant qu'on me le demande.", body: "En dehors du rôle principal, j'ai développé un système personnel propulsé par l'IA pour gérer la préparation aux entretiens, le positionnement et les contenus candidature comme une base de données structurée, réutilisable et adaptable — le même instinct appliqué à la livraison IA enterprise : repérer le processus qui tourne sur des scripts et de la bonne volonté, et construire l'infrastructure qui le rend reproductible.", closing: "J'ai construit un AI Studio personnel avant de connaître le nom." },
     ],
@@ -270,8 +272,8 @@ const fr: Translation = {
     intro: "Articles publiés environ toutes les semaines — sur la livraison IA, le produit enterprise et les cadres d'exécution.",
   },
   fit: {
-    label: "Motivation & Adéquation",
-    h2: "Ce que je recherche vraiment.",
+    label: "Philosophie de travail",
+    h2: "Dans quel environnement je performe.",
     blocks: [
       { label: "Environnement", body: "Forte autonomie, culture de validation rapide. Je donne le meilleur de moi-même quand les squads sont habilitées à avancer sans bureaucratie à plusieurs niveaux — une vélocité organisationnelle initiale plus lente me convient ; c'est exactement là où j'apporte le plus de valeur. Ce qui n'est pas négociable, c'est la liberté d'agir sur cette vélocité une fois en poste." },
       { label: "Ownership", body: "Un ownership produit réel, pas de la gestion de livraison déguisée. Je veux façonner la roadmap, pas seulement orchestrer celle de quelqu'un d'autre." },
@@ -280,8 +282,8 @@ const fr: Translation = {
     ],
   },
   contact: {
-    h2: "Ouvert à la bonne opportunité.",
-    body: "Rôles IA Senior à Paris. Livraison enterprise, gouvernance et GenAI à l'échelle. Parlons-en.",
+    h2: "Construisons quelque chose qui compte.",
+    body: "Livraison IA enterprise, gouvernance et stratégie produit à l'échelle. Contactez-moi si vous travaillez sur quelque chose d'ambitieux.",
   },
   crisis: {
     title: "Schéma de résolution de crise",

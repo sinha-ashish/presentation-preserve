@@ -31,7 +31,6 @@ function HomePage() {
       <section id="home" className="border-b border-rule pt-24 pb-[72px]">
         <Container>
           <div className="mb-7 inline-flex items-center gap-2 text-[0.78rem] font-medium uppercase tracking-[0.08em] text-mid">
-            <span className="pulse-dot" />
             {t.hero.badge}
           </div>
           <h1 className="mb-7 max-w-[820px] font-syne text-[clamp(2.2rem,5vw,4rem)] font-extrabold leading-[1.05] tracking-[-0.03em]">
@@ -295,13 +294,10 @@ function HomePage() {
               </p>
             </div>
             <div className="flex flex-row flex-wrap gap-3 md:flex-col">
-              <a href="mailto:ashish.sinha2408@gmail.com" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
+              <a href="mailto:ashish.sinha2408@gmail.com" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/25 bg-white/10 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/20">
                 ✉️ &nbsp;ashish.sinha2408@gmail.com
               </a>
-              <a href="tel:+33618973960" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
-                📞 &nbsp;+33 6 18 97 39 60
-              </a>
-              <a href="https://www.linkedin.com/in/sinha-ashish/" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/10 bg-white/[0.07] px-[22px] py-3.5 text-[0.85rem] font-medium text-white transition-colors hover:bg-white/[0.12]">
+              <a href="https://www.linkedin.com/in/sinha-ashish/" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/25 bg-white/10 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/20">
                 💼 &nbsp;LinkedIn →
               </a>
             </div>
