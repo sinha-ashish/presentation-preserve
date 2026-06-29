@@ -147,7 +147,6 @@ const en: Translation = {
       { label: "Environment", body: "High autonomy, fast sign-off culture. I do my best work when squads are empowered to move without multi-layered bureaucracy — slower organizational velocity is fine; that's exactly the zone where I add the most value. What's non-negotiable is the freedom to act on that velocity once I'm in." },
       { label: "Ownership", body: "Genuine product ownership, not delivery-management-in-name-only. I want to shape the roadmap, not just orchestrate someone else's." },
       { label: "Culture", body: "Fiercely user-obsessed, growth-centered teams that default to giving each other the benefit of the doubt. Ego-free isn't a slogan here — it's an operating requirement." },
-      { label: "Compensation", body: "Open to senior roles in Paris and remote-first environments where scope and ownership justify the conversation. Happy to discuss structure and expectations directly." },
     ],
   },
   contact: {
@@ -278,7 +277,6 @@ const fr: Translation = {
       { label: "Environnement", body: "Forte autonomie, culture de validation rapide. Je donne le meilleur de moi-même quand les squads sont habilitées à avancer sans bureaucratie à plusieurs niveaux — une vélocité organisationnelle initiale plus lente me convient ; c'est exactement là où j'apporte le plus de valeur. Ce qui n'est pas négociable, c'est la liberté d'agir sur cette vélocité une fois en poste." },
       { label: "Ownership", body: "Un ownership produit réel, pas de la gestion de livraison déguisée. Je veux façonner la roadmap, pas seulement orchestrer celle de quelqu'un d'autre." },
       { label: "Culture", body: "Des équipes farouchement centrées sur l'utilisateur, orientées croissance, qui accordent par défaut le bénéfice du doute. L'absence d'ego n'est pas un slogan ici — c'est une exigence opérationnelle." },
-      { label: "Rémunération", body: "Ouvert à des rôles seniors à Paris et en remote-first où le périmètre et l'ownership justifient la conversation. Disponible pour en discuter directement." },
     ],
   },
   contact: {

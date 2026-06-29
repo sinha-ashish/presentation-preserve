@@ -294,10 +294,10 @@ function HomePage() {
               </p>
             </div>
             <div className="flex flex-row flex-wrap gap-3 md:flex-col">
-              <a href="mailto:ashish.sinha2408@gmail.com" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/25 bg-white/10 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/20">
+              <a href="mailto:ashish.sinha2408@gmail.com" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/30 bg-white/15 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/25 hover:border-white/50">
                 ✉️ &nbsp;ashish.sinha2408@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/sinha-ashish/" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/25 bg-white/10 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/20">
+              <a href="https://www.linkedin.com/in/sinha-ashish/" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 whitespace-nowrap rounded-md border border-white/30 bg-white/15 px-[22px] py-3.5 text-[0.85rem] font-semibold text-white transition-colors hover:bg-white/25 hover:border-white/50">
                 💼 &nbsp;LinkedIn →
               </a>
             </div>
