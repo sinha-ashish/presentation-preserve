@@ -12,7 +12,7 @@ export function SiteNav() {
   ];
 
   return (
-    <nav className="sticky top-0 z-[100] border-b border-rule bg-[rgba(247,246,242,0.88)] backdrop-blur-md py-4">
+    <nav className="sticky top-0 z-[100] border-b border-rule bg-[rgba(247,246,242,0.95)] backdrop-blur-md py-4">
       <div className="mx-auto flex max-w-[1080px] items-center justify-between gap-4 px-6">
         <a href="/#home" className="font-syne text-base font-extrabold tracking-[-0.02em]">
           Ashish Sinha

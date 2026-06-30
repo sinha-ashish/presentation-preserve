@@ -289,7 +289,7 @@ function HomePage() {
               <h2 className="mb-2.5 font-syne text-[clamp(1.6rem,3vw,2.4rem)] font-bold leading-[1.15] tracking-[-0.02em] text-white">
                 {t.contact.h2}
               </h2>
-              <p className="text-[0.95rem] text-white/55">
+              <p className="text-[0.95rem] text-white/70">
                 {t.contact.body}
               </p>
             </div>
