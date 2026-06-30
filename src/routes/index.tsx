@@ -14,9 +14,26 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. €30M portfolio governance, 15+ GenAI use cases shipped." },
       { property: "og:title", content: "Ashish Sinha — Enterprise AI Product Leader" },
       { property: "og:description", content: "9 years leading cross-functional AI squads across €30M+ portfolios. Paris." },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://ai-product-paris.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://ai-product-paris.lovable.app/" }],
+    scripts: [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Ashish Sinha",
+        jobTitle: "Enterprise AI Product Leader",
+        description: "Senior AI Product Leader. 9 years scaling enterprise AI from prototype to production. €30M portfolio governance, 15+ GenAI use cases shipped.",
+        url: "https://ai-product-paris.lovable.app/",
+        sameAs: "https://www.linkedin.com/in/sinha-ashish/",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Paris",
+          addressCountry: "FR",
+        },
+      }),
+    }],
   }),
   component: HomePage,
 });
