@@ -88,10 +88,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Ashish Sinha" },
       { name: "twitter:title", content: "Ashish Sinha — Enterprise AI Product Leader" },
       { name: "twitter:description", content: "Senior AI Product Leader. Delivery frameworks, governance architecture, and the instincts behind getting enterprise AI into production reliably. Based in Paris." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/28f8f82a-5568-4c67-b6d4-0df3c806bada" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/28f8f82a-5568-4c67-b6d4-0df3c806bada" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2590b86d-7a5b-4cb1-a523-ef13f3a1af3c" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2590b86d-7a5b-4cb1-a523-ef13f3a1af3c" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "google-site-verification", content: "_K7GTf2IOxbVLN_0oQVHh6qt-Ot-dChl6iHgdzntQYs" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -99,15 +98,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" },
     ],
-    scripts: [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "Ashish Sinha — Enterprise AI Product Leader",
-        url: "https://ai-product-paris.lovable.app/",
-      }),
-    }],
   }),
   shellComponent: RootShell,
   component: RootComponent,
