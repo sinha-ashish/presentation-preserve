@@ -12,16 +12,32 @@ export const Route = createFileRoute("/writing/$slug")({
     const a = loaderData?.article;
     const title = a ? `${a.title} — Ashish Sinha` : "Writing — Ashish Sinha";
     const desc = a?.paragraphs[0]?.slice(0, 160) ?? "";
+    const url = a ? `https://ai-product-paris.lovable.app/writing/${a.slug}` : "https://ai-product-paris.lovable.app/writing";
     return {
       meta: [
         { title },
         { name: "description", content: desc },
         { property: "og:title", content: title },
         { property: "og:description", content: desc },
-        { property: "og:url", content: `/writing/${a?.slug ?? ""}` },
+        { property: "og:url", content: url },
         { property: "og:type", content: "article" },
       ],
-      links: a ? [{ rel: "canonical", href: `/writing/${a.slug}` }] : [],
+      links: a ? [{ rel: "canonical", href: url }] : [],
+      scripts: a ? [{
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: a.title,
+          datePublished: a.isoDate,
+          author: {
+            "@type": "Person",
+            name: "Ashish Sinha",
+          },
+          url,
+          description: desc,
+        }),
+      }] : [],
     };
   },
   notFoundComponent: () => (
