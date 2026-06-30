@@ -6,6 +6,7 @@ export type Article = {
   slug: string;
   title: string;
   dateLabel: string;
+  isoDate: string;
   readingTime: string;
   paragraphs: string[];
 };
@@ -15,6 +16,7 @@ export const articles: Article[] = [
     slug: "80-40-rule",
     title: "The 80/40 Rule: Why High-Signal Imperfection Beats Slow Enterprise Roadmaps",
     dateLabel: "May 31, 2026",
+    isoDate: "2026-05-31",
     readingTime: "4 min read",
     paragraphs: [
       "Stretched development cycles, endless requirement clarification rounds, and multi-layered internal demos are quietly killing product velocity inside most enterprises. The instinct to 'get it right before showing anyone' feels responsible. In practice, it's often the single biggest drag on shipping real value.",
